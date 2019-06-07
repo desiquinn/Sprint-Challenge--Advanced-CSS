@@ -1,1 +1,26 @@
 // Navigation code here
+
+.nav-bar {
+    width: 100%;
+    height: 100px;
+    border-bottom: 2px solid @nav-border;
+    background-color: @nav-bg;
+    padding: 10px 0;
+
+    .flexinColumn();
+
+    h1 {
+        margin-bottom: 15px;
+    }
+
+    nav {
+        .flexinRow();        
+        width: 35%;
+
+        a {
+            text-decoration: none;
+            font-size: 1.6rem;
+            color: @nav-font;
+        }
+    }
+}
