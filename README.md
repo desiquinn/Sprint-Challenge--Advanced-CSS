@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Both adaptive websites and fully responsive websites use media queries to set different layouts for different resolutions/screen sizes. However, adaptive websites borrow from fixed website layouts and still us absolute values (such as pixels) for sizing and spacing. Fully responsive websites borrow from fluid website layouts instead by using percentages and other relative values for sizing and spacing.  This way the layout will look good at the breakpoints AND in between the breakpoints.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+A desktop first approach to designing and developing a website means that the developer codes for the desktop first and then within the media queries uses "max-width" to define breakpoints and scale the design down.  With mobile firs the developer codes for the small screen first and then used "min-width" within the media queries to scale the design up.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+The default font-size for an html document is usually 16px depending on the browser used. Using font-size 62.5 in the html tag sets the font-size to 10px.  This way when we set font-sizes throughout our document using rem units, those values will look to the html tag and become a multiple of that. With the font-size being 10px it's easier to calculate what the result of that multiplication will be.  For example 1.4rem will not be 14px.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing allows us to create D.R.Y. code by giving CSS additional functionality that we can use.  When we write in the pre-processing syntax it will then compile the code into native CSS for the browser to read and run.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite concept in preprocessing is the ability to nest objects. Now i'm able to write CSS code that follows a simular flow to my HTML document. The concept that gives me the most trouble are the functions. I haven't quite figured out how to use them properly.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
