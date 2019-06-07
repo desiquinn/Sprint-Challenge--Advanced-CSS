@@ -6,6 +6,8 @@
     border-bottom: 2px solid @nav-border;
     background-color: @nav-bg;
     padding: 10px 0;
+    position: fixed;
+    top: 0;
 
     .flexinColumn();
 
@@ -21,6 +23,11 @@
             text-decoration: none;
             font-size: 1.6rem;
             color: @nav-font;
+        }
+
+        @media @phone {
+            width: 100%;
+            justify-content: space-around;
         }
     }
 }

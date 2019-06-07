@@ -29,6 +29,20 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      @media @phone {
+        width: 100%;
+      }
+    }
+
+    @media @phone {
+      .sky{
+        display: none;
+      }
+
+      .launch {
+        display: none;
+      }
     }
   }
 
@@ -65,8 +79,23 @@
       .btn {
         button{
           .button(@btn-bg-color, @porcelain);
+
+          &:hover {
+            .buttonHover(@porcelain, @btn-bg-color)
+          }
+
+          @media @phone {
+            width: 100%;
+            height: 60px;
+            padding: 20px;
+          }
         }
       }
+
+      @media @phone {
+        width: 100%;
+      }
+
     }
 
     .walk-img {
@@ -78,6 +107,17 @@
         height: auto;
         border-radius: 10px;
       }
+
+      @media @phone {
+        width: 100%;
+        margin: 20px 0;
+      }
+    }
+
+    @media @phone {
+      flex-direction: column-reverse;
+      margin-top: 20px;
+      padding: 15px;
     }
   }
 }// home
